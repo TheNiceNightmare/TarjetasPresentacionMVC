@@ -1,0 +1,19 @@
+﻿@model TarjetasPresentacionMVC.Models.Tarjeta
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh; background: linear-gradient(to bottom, #74ebd5, #acb6e5);">
+    <div class="card text-center shadow-lg" style="width: 22rem; border-radius: 15px; overflow: hidden;">
+        <div class="card-header bg-primary text-white">
+            <i class="fas fa-user-circle fa-4x"></i>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Model.Nombre</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Titulo</h6>
+            <p class="card-text">
+                <strong>Correo:</strong> @Model.Correo <br />
+                <strong>Teléfono:</strong> @Model.Telefono
+            </p>
+        </div>
+        <div class="card-footer text-muted">
+            <a href="/Tarjeta/Index" class="btn btn-outline-primary">Volver</a>
+        </div>
+    </div>
+</div>

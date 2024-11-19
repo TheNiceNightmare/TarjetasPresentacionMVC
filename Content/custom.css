@@ -1,0 +1,34 @@
+﻿/* Animación para la tarjeta */
+.card {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo personalizado para el fondo */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+    min-height: 100vh;
+}
+
+/* Botones personalizados */
+.btn-outline-primary {
+    transition: all 0.3s ease;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: white;
+    }

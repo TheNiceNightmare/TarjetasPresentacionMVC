@@ -1,0 +1,26 @@
+﻿@model TarjetasPresentacionMVC.Models.Tarjeta
+<div class="d-flex justify-content-center align-items-center" style="height: 100vh; background: linear-gradient(to bottom, #74ebd5, #acb6e5);">
+    <div class="card shadow p-4" style="width: 25rem; border-radius: 15px;">
+        <h4 class="text-center text-primary mb-4">Generador de Tarjetas</h4>
+        @using (Html.BeginForm())
+        {
+            <div class="form-group mb-3">
+                <label for="Nombre">Nombre:</label>
+                @Html.TextBoxFor(m => m.Nombre, new { @class = "form-control", placeholder = "Ejemplo: Juan Pérez" })
+            </div>
+            <div class="form-group mb-3">
+                <label for="Titulo">Título:</label>
+                @Html.TextBoxFor(m => m.Titulo, new { @class = "form-control", placeholder = "Ejemplo: Desarrollador Web" })
+            </div>
+            <div class="form-group mb-3">
+                <label for="Correo">Correo:</label>
+                @Html.TextBoxFor(m => m.Correo, new { @class = "form-control", placeholder = "ejemplo@correo.com" })
+            </div>
+            <div class="form-group mb-3">
+                <label for="Telefono">Teléfono:</label>
+                @Html.TextBoxFor(m => m.Telefono, new { @class = "form-control", placeholder = "Ejemplo: 809-123-4567" })
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Generar Tarjeta</button>
+        }
+    </div>
+</div>
